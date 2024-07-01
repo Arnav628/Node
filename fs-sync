@@ -1,0 +1,13 @@
+const { isUtf8 } = require('buffer')
+const fs=require('fs')
+
+const first=fs.readFileSync('./content/first.txt','Utf8');
+const firsts=fs.readFileSync('./content/subfolder/first.txt','Utf8');
+const second=fs.readFileSync('./content/subfolder/second.txt','Utf8');
+
+// console.log(first)
+// console.log(firsts)
+// console.log(second)
+
+
+fs.writeFileSync('./content/reult.txt' , `Hello world`)
